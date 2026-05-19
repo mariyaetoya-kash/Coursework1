@@ -1,0 +1,326 @@
+/* Общие настройки */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DFD5DD;
+    color: #333;
+}
+
+/* Навигация */
+header {
+    width: 1468px;
+    background-color: #969596;
+    padding: 20px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.logo{
+     position: absolute;
+    left: 20px;
+    width: 60px;
+    top: 0px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+ nav li:not(:first-child){
+    width: 100px;
+    background-color: rgba(6, 137, 10, 0.5);
+    border-radius: 15px;
+    padding: 5px 0;
+    text-decoration: none;
+}
+nav ul li {
+    width: 90px;
+    text-align: center;
+    margin-left: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+nav ul li a {
+    display: block;      /* превращаем ссылку в блочный элемент */
+    width: 90px;        
+    text-decoration: none;
+    color: black;
+    
+}
+
+.secondBL{
+    margin-top: 200px;
+}
+
+/* Карточки рецептов */
+.recipes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1{
+    font-family: AmadeusAP;
+    font-size: 50px;
+}
+.twoPictures{
+position: relative;
+width: 1448px;
+height: auto;
+}
+.Tit{
+position: absolute;
+top: 550px;      
+left: 25%;
+transform: translate(-50%, -50%);
+font-family: AmadeusAP;
+font-size: 100px;
+color: rgb(0, 0, 0);
+text-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+.Gl{
+   width: 1468px;
+   height: auto;
+   display: block;
+}
+.overlay{
+    position: absolute;
+    top: 650px;
+    left: 368px;
+    width: 1100px;
+}
+h2{
+   font-family: AmadeusAP;
+    font-size: 80px; 
+    color: black;
+}
+.Gantel{
+    width: 600px;
+    height: auto;
+    margin-left: 70px;
+}
+.InPP{
+    width: 1448px;
+    display: flex;
+    gap: 10px;
+}
+p{
+    font-size: 25px;
+}
+.circle{
+    width: 100px;
+    margin-left: 30px;
+}
+.circle:hover{
+    transform: scale(1.8);
+}
+.Doc{
+    margin-left: 20px;
+}
+.Transition{
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+.recipes:hover .Transition{
+    transform: scale(0.9);
+}
+.recipes .Transition:hover{
+    transform: scale(1.1);
+}
+.button{
+    width: 345px;
+    margin: 10px;
+    border-radius: 15%;
+    filter: blur(2px);
+    display: block;
+    transition: 0.3s;
+}
+h3{
+    font-family: AmadeusAP;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+h4{
+    margin-left: 1250px;
+    font-size: 20px;
+}
+/* Футер */
+footer {
+    display: flex;
+    height: 350px;
+    justify-content: space-between;/**/
+    background-color: #969596;
+    padding: 40px 20px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
+}
+.footLeft, .footCenter, .footRight{
+    flex: 1;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+   justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+    padding: 0;
+}
+.socialN{
+    width: 40px;
+    transition: transform 0.3s;
+}
+.socialN:hover {
+    transform: scale(1.1);
+}
+.InFoot{
+    width: 300px;
+    height: 350px;
+}
+.Words {
+    font-family: AmadeusAP;
+    font-size: 70px;
+    line-height: 1.1;
+    color: #000000;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.who{
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    font-family: AmadeusAP;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    /* Шапка */
+    header {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav ul {
+       display: flex;
+        gap: 30px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        width: auto;
+        height: 40px;
+    }
+
+    .logo {
+        position: static;
+        width: 50px;
+        margin-bottom: 10px;
+        margin-left: -120px;
+    }
+
+    /* Главный блок */
+    .twoPictures {
+        width: 100%;
+    }
+
+    .Gl {
+        width: 100%;
+    }
+
+    .Tit {
+        font-size: 40px;
+        top: 67%;
+        left: 18%;
+    }
+
+    .overlay {
+        width: 79%;
+        left: 21%;
+        top: 77%;
+    }
+    
+    .recipes {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .button {
+        width: 260px;
+        filter: blur(1px);
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+    .secondBL h2{
+    margin-top: -120px; /* пример */
+    }
+    /* Информация о ПП */
+    .InPP {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Gantel {
+        width: 90%;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .circle {
+        width: 70px;
+    }
+
+    h4 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Футер */
+    footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .InFoot {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Words {
+        font-size: 40px;
+    }
+}
